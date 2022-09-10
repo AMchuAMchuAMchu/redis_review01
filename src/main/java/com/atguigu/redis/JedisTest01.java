@@ -16,6 +16,17 @@ import java.util.concurrent.TimeUnit;
  */
 public class JedisTest01 {
 
+
+    @Test
+    public void test03(){
+
+        Jedis jedis = new Jedis("192.168.200.159", 6379);
+
+        System.out.println(jedis.ping());
+
+
+    }
+
     @Test
     public void test02() {
 
